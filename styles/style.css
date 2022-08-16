@@ -1,0 +1,148 @@
+body{
+    background-color: orange;
+    
+}
+
+.MainPanier{
+    background-color: #CCDBDC;
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.Main{
+    width: auto;
+    display: grid;
+    grid-template-columns: 872px 280px;
+    grid-template-rows: 468px;
+    grid-column-gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Articles{
+    width: 872px;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+
+.ResumePanier{
+    width: 280px;
+    background-color: cyan;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.ArticleAAcheter{
+    background-color: cyan;
+    width: 840 px;
+    height: 144 px;
+    display: grid;
+    grid-template-columns: 72px 40px 476px 132px 40px 40px 40px;
+    grid-template-rows: 24px 24px 24px 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.ImageArticle{
+    width: 72px;
+    height: 72px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.NomArticle{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.VendeurArticle{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: start;
+}
+
+.btnSupprimer{
+    width: 112px;
+    height: 24px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.btnDiminuerQuantite{
+    width: 24px;
+    height: 24px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.btnAugmenterQuantite{
+    width: 24px;
+    height: 24px;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.Quantite{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.btnJadore{
+    width: 48px;
+    height: 24px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.PrixArticle{
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: end;
+}
+
