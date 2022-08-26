@@ -3,54 +3,77 @@
 <head>
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <div class="MainPanier">
         <div class="Main">
-            <div class="Articles">
-                <div class="ArticleAAcheter">
+            <div id="Articles" class="Articles">
+                <div id="Article1" class="Article">
                     <img class="ImageArticle" src="../res/Bracelet.jpeg" alt="ImageArticle">
                     <p class="NomArticle">XIAOMI Bracelet connecté Mi Band 5 - OLED 1.1 - Fréquence Cardiaque - Noir</p>
                     <p class="VendeurArticle">Vendeur: twinshop</p>
-                    <p class="PrixArticle">4,850 DA</p>
-                    <p class="Quantite">2</p>
-                    <button class="btnSupprimer">SUPPRIMER</button>
-                    <button class="btnDiminuerQuantite">-</button>
-                    <button class="btnAugmenterQuantite">+</button>
-                    <button class="btnJadore">❤️</button>
+                    <p id="Prix1" class="PrixArticle">4,850 DA</p>
+                    <p id="Quantite1" class="Quantite">1</p>
+                    <button id="btnSupprimer1" class="btnSupprimer"><i class="fa fa-trash-o"></i> SUPPRIMER</button>
+                    <button id="btnDiminuer1" class="btnDiminuerQuantite"><i class="fa fa-minus"></i></button>
+                    <button id="btnAugmenter1" class="btnAugmenterQuantite"><i class="fa fa-plus"></i></button>
+                    <div class='btnJadore large-font text-center'>
+                        <ion-icon id="icon1" name="heart">
+                            <div class='red-bg'></div>
+                        </ion-icon>
+                    </div> 
                 </div>
-                <hr>
-                <div class="ArticleAAcheter">
+
+                <hr id="hr1">
+
+                <div id="Article2" class="Article">
                     <img class="ImageArticle" src="../res/Ecouteurs.jpeg" alt="ImageArticle">
-                    <p class="NomArticle">XIAOMI Bracelet connecté Mi Band 5 - OLED 1.1 - Fréquence Cardiaque - Noir</p>
-                    <p class="VendeurArticle">Vendeur: twinshop</p>
-                    <p class="PrixArticle">4,850 DA</p>
-                    <p class="Quantite">2</p>
-                    <button class="btnSupprimer">SUPPRIMER</button>
-                    <button class="btnDiminuerQuantite">-</button>
-                    <button class="btnAugmenterQuantite">+</button>
-                    <button class="btnJadore">❤️</button>
+                    <p class="NomArticle">Oppo Enco W51 - Ecouteurs Bluetooth Sans Fil - Starry Blue</p>
+                    <p class="VendeurArticle">Vendeur: OPPO</p>
+                    <p id="Prix2" class="PrixArticle">13,900 DA</p>
+                    <p id="Quantite2" class="Quantite">1</p>
+                    <button id="btnSupprimer2" class="btnSupprimer"><i class="fa fa-trash-o"></i> SUPPRIMER</button>
+                    <button id="btnDiminuer2" class="btnDiminuerQuantite"><i class="fa fa-minus"></i></button>
+                    <button id="btnAugmenter2" class="btnAugmenterQuantite"><i class="fa fa-plus"></i></button>
+                    <div class='btnJadore large-font text-center'>
+                        <ion-icon id="icon2" name="heart">
+                            <div class='red-bg'></div>
+                        </ion-icon>
+                    </div> 
                 </div>
-                <hr>
-                <div class="ArticleAAcheter">
+
+                <hr id="hr2">
+
+                <div id="Article3" class="Article">
                     <img class="ImageArticle" src="../res/Cable.jpeg" alt="ImageArticle">
-                    <p class="NomArticle">XIAOMI Bracelet connecté Mi Band 5 - OLED 1.1 - Fréquence Cardiaque - Noir</p>
-                    <p class="VendeurArticle">Vendeur: twinshop</p>
-                    <p class="PrixArticle">4,850 DA</p>
-                    <p class="Quantite">2</p>
-                    <button class="btnSupprimer">SUPPRIMER</button>
-                    <button class="btnDiminuerQuantite">-</button>
-                    <button class="btnAugmenterQuantite">+</button>
-                    <button class="btnJadore">❤️</button>
-                </div>
-
-                
-
+                    <p class="NomArticle">Ldnio Cable Charge Rapide Micro Usb Sync Données Compatible Sony Huawei Samsung Oppo</p>
+                    <p class="VendeurArticle">Vendeur: ahmdh</p>
+                    <p id="Prix3" class="PrixArticle">899 DA</p>
+                    <p id="Quantite3" class="Quantite">1</p>
+                    <button id="btnSupprimer3" class="btnSupprimer"><i class="fa fa-trash-o"></i> SUPPRIMER</button>
+                    <button id="btnDiminuer3" class="btnDiminuerQuantite"><i class="fa fa-minus"></i></button>
+                    <button id="btnAugmenter3" class="btnAugmenterQuantite"><i class="fa fa-plus"></i></button>
+                    <div class='btnJadore large-font text-center'>
+                        <ion-icon id="icon3" name="heart">
+                            <div class='red-bg'></div>
+                        </ion-icon>
+                    </div> 
+                </div>       
 
 
             </div>
             <div class="ResumePanier">
-                RÉSUMÉ DU PANIER
+                <p class="resumePanierTitre">TOTAL DU PANIER</p>
+                <hr width="85%">
+                <p id="Total">19,649 DA</p>
+                <button class="btnCommander" >COMMANDER</button>
             </div>
 
 
